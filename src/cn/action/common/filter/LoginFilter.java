@@ -1,18 +1,12 @@
 package cn.action.common.filter;
 
-import java.io.IOException;
-
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
 import cn.action.common.utils.UserUtils;
 import cn.action.modules.sys.entity.User;
+
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 public class LoginFilter implements Filter{
 	
@@ -32,17 +26,17 @@ public class LoginFilter implements Filter{
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		HttpServletRequest res=(HttpServletRequest) request; 
-        HttpServletResponse resp=(HttpServletResponse)response; 
-        if(!isPermitUrl(request)){ 
-            if(filterCurrUrl(request)){ 
-                System.out.println("--->«Îµ«¬º"); 
-                resp.sendRedirect(res.getContextPath()+gotoUrl); 
-                return; 
-            } 
-        } 
-        System.out.println("--->‘ –Ì∑√Œ "); 
-        chain.doFilter(request, response); 
+		HttpServletRequest res=(HttpServletRequest) request;
+        HttpServletResponse resp=(HttpServletResponse)response;
+        if(!isPermitUrl(request)){
+            if(filterCurrUrl(request)){
+                System.out.println("--->«Îµ«¬º");
+                resp.sendRedirect(res.getContextPath()+gotoUrl);
+                return;
+            }
+        }
+        System.out.println("--->‘ –Ì∑√Œ ");
+        chain.doFilter(request, response);
 	}
 
 	@Override

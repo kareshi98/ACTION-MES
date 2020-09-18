@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.action.modules.equip.dao.EquipFaultReportDao">
+	
+	<sql id="Columns">
+		id,
+		equip_id as "equipId",
+		equip_no as "equipNo",
+		equip_type as "equipType",
+		equip_loc as "equipLoc",
+		fault_desc as "faultDesc",
+		status,
+		report_person as "reportPerson",
+		assign_time as "assignTime",
+		maintenance_worker as "maintenanceWorker",
+		del_flag as "delFlag",
+		remarks,
+		create_by as "createBy.id",
+		create_date as "createDate",
+		update_by as "updateBy.id",
+		update_date as "updateDate"	
+	</sql>
+	<!-- 根据id查询：get -->
+	<select id="get" resultType="EquipFaultReport">
+		select
+			<include refid="Columns"></include>
+		from equip_fault_report
+		where id=#{id}
+	</select>
+	<!-- 根据条件查询 -->
+	<select id="findList" resultType="EquipFaultReport">
+		select
+			<include refid="Columns"></include>
+		from equip_fault_report
+		where del_flag=#{DEL_FLAG_NORMAL}
+		<if test="equipType!=null and equipType!=''">
+			and equip_type=#{equipType}
+		</if>
+		<if test="equipLoc!=null and equipLoc!=''">
+			and equip_loc=#{equipLoc}
+		</if>
+		<if test="status!=null and status!=''">
+			and status=#{status}
+		</if>
+		order by update_date desc
+	</select>
+	<!-- 查询所有 -->
+	<select id="findAllList" resultType="EquipFaultReport">
+		select
+			<include refid="Columns"></include>
+		from equip_fault_report
+		where del_flag=#{DEL_FLAG_NORMAL}
+		
+		order by update_date desc
+	</select>
+	<!-- 插入 -->
+	<insert id="insert">
+		insert into equip_fault_report(
+			id,
+			equip_id,
+			equip_no,
+			equip_type,
+			equip_loc,
+			fault_desc,
+			status,
+			report_person,
+			assign_time,
+			maintenance_worker,
+			del_flag,
+			remarks,
+			create_by,
+			create_date,
+			update_by,
+			update_date
+			
+		)values(
+			#{id},
+			#{equipId},
+			#{equipNo},
+			#{equipType},
+			#{equipLoc},
+			#{faultDesc},
+			#{status},
+			#{reportPerson},
+			#{assignTime},
+			#{maintenanceWorker},
+			#{delFlag},
+			#{remarks},
+			#{createBy.id},
+			#{createDate},
+			#{updateBy.id},
+			#{updateDate}
+		)
+	</insert>
+	<update id="update">
+		update equip_fault_report set
+			equip_id=#{equipId},
+			equip_no=#{equipNo},
+			equip_type=#{equipType},
+			equip_loc=#{equipLoc},
+			fault_desc=#{faultDesc},
+			status=#{status},
+			report_person=#{reportPerson},
+			assign_time=#{assignTime},
+			maintenance_worker=#{maintenanceWorker},
+			update_by=#{updateBy.id},
+			update_date=#{updateDate}
+		where id=#{id}
+	</update>
+</mapper>
