@@ -28,13 +28,13 @@ public class LoginFilter implements Filter{
 			throws IOException, ServletException {
 		HttpServletRequest res=(HttpServletRequest) request;
         HttpServletResponse resp=(HttpServletResponse)response;
-        if(!isPermitUrl(request)){
+        /*if(!isPermitUrl(request)){
             if(filterCurrUrl(request)){
                 System.out.println("--->«Îµ«¬º");
                 resp.sendRedirect(res.getContextPath()+gotoUrl);
                 return;
             }
-        }
+        }*/
         System.out.println("--->‘ –Ì∑√Œ ");
         chain.doFilter(request, response);
 	}
