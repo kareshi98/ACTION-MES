@@ -3,6 +3,7 @@ package cn.action.modules.tec.web;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.action.modules.tec.entity.Flow;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -51,6 +52,17 @@ public class ProcessController extends BaseController{
 		this.addMessage(redirectAttributes, "删除工序信息成功！");
 		return "redirect:"+adminPath+"/tec/process";
 	}
+
+	@RequestMapping(value="delmore")
+	public String delmore(String[] idAr, Process process, Model model, RedirectAttributes redirectAttributes) {
+		for(int i=0;i<idAr.length;i++){
+			process.setId(idAr[i]);
+			processService.delete(process);
+		}
+		this.addMessage(redirectAttributes, "删除工艺流程成功！");
+		return "redirect:"+adminPath+"/tec/process";
+	}
+
 	//跳转页面
 	@RequestMapping(value="form")
 	public String form(Process process,Model model) {

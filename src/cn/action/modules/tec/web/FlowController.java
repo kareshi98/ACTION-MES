@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.sun.tracing.dtrace.ProviderAttributes;
-
 import cn.action.common.persistence.Page;
 import cn.action.common.utils.StringUtils;
 import cn.action.common.web.BaseController;
@@ -53,7 +51,17 @@ public class FlowController extends BaseController{
 		this.addMessage(redirectAttributes, "删除工艺流程成功！");
 		return "redirect:"+adminPath+"/tec/flow";
 	}
-	
+
+	@RequestMapping(value="delmore")
+	public String delmore(String[] idAr,Flow flow,Model model,RedirectAttributes redirectAttributes) {
+		for(int i=0;i<idAr.length;i++){
+			flow.setId(idAr[i]);
+			flowService.delete(flow);
+		}
+		this.addMessage(redirectAttributes, "删除工艺流程成功！");
+		return "redirect:"+adminPath+"/tec/flow";
+	}
+
 	@RequestMapping(value="form")
 	public String form(Flow flow,Model model) {
 		model.addAttribute("flow", flow);
