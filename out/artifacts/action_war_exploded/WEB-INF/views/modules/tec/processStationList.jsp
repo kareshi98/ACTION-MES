@@ -14,6 +14,57 @@
 		}
 	</script>
 	<script type="text/javascript">
+		function Select() {
+			var name = document.getElementsByName("ids");
+			var sel = document.getElementById("selall");
+			for (var i = 0; i < name.length; i++) {
+				name[i].checked=true;
+			}
+			if(!sel.checked){
+				for (var i = 0; i < name.length; i++) {
+					name[i].checked=false;
+				}
+			}
+		}
+
+		/*添加删除选中栏*/
+		function delmore(){
+			//给删除选中按钮添加单击事件
+			document.getElementById("delSelected").onclick = function(){
+				if(confirm("您确定要删除选中条目吗？")){
+					var flag=false;
+					//判断是否有选中条目,不选中任何条目删除会报空指针异常错误
+					var idAr=new Array();
+					var id='';
+					var name = document.getElementsByName("ids");
+					for (var i = 0; i < name.length; i++) {
+						if(name[i].checked){
+							//有一个条目选中了
+							flag=true;
+							break;
+						}
+					}
+					if(flag==false)
+						alert("当前未选中任何项目，请检查");
+					else
+					{
+						for(var i=0;i<name.length;i++){
+							id=name[i].value;
+							if(name[i].checked){
+								//window.location.href = "${ctx}/tec/flow/delete?id="+id;
+								idAr[i]=id;
+
+							}
+						}
+						//上面会拼接出一个名为idAr的数组
+						window.location.href = "${ctx}/tec/processStation/delmore?idAr="+idAr;
+
+					}
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript">
 		function base64 (content) {
 			return window.btoa(unescape(encodeURIComponent(content)));
 		}
@@ -52,13 +103,15 @@
 			<label>工序名称：</label>
 			<form:input path="process.proName" maxlength="50" class="input-medium" htmlEscape="false"/>
 			<input id="btnSubmit" type="submit" value="查询" class="btn btn-primary"/>
+			<input id="PutExcel" type="submit" value="导出EXCEL" class="btn btn-primary" onclick="tableToExcel('contentTable','processStationList')"/>
+			<button type="button" class="btn btn-primary" onclick="delmore()" id="delSelected">删除选中</button>
 		</div>
 	</form:form>
 	<sys:message content="${message}"/>
 	<!-- 3.列表 -->
-	<button type="button" onclick="tableToExcel('contentTable','processStationList')">导出EXCEL</button>
 	<table id="contentTable" class="table table-striped table-bordered table-condensed">
 		<thead>
+			<th><input type="checkbox" name="selall" id="selall" onclick="Select()"/>全选</th>
 			<th>工序名称</th>
 			<th>工站名称</th>
 			<th>产线名称</th>			
@@ -67,6 +120,7 @@
 		<tbody>
 			<c:forEach items="${page.list}" var="ps">
 				<tr>
+					<td><input type="checkbox" name="ids" id="id" value="${ps.id}"/></td>
 					<td>${ps.process.proName}</td>
 					<td>${ps.workStationInfos.stationName}</td>
 					<td>${ps.workStationInfos.line.lineName}</td>
