@@ -46,11 +46,14 @@
 				<span class="help-inline"><font color="red">*</font></span>
 			</div>
 		</div>
-		
+
 		<div class="control-group">
 			<label class="control-label">违规人员：</label>
 			<div class="controls">
-				<form:input path="userName" htmlEscape="false" maxlength="50" class="required"/>
+				<form:select path="userName" id="eId" class="input-medium required">
+					<form:option value="" label=""/>
+					<form:options items="${employeeList}" itemLabel="employeeName" itemValue="id" htmlEscape="false"/>
+				</form:select>
 				<span class="help-inline"><font color="red">*</font></span>
 			</div>
 		</div>

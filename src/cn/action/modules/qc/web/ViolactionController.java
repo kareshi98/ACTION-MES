@@ -5,6 +5,8 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cn.action.modules.bas.entity.Employee;
+import cn.action.modules.bas.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,6 +27,8 @@ import cn.action.modules.qc.service.ViolactionService;
 public class ViolactionController extends BaseController{
 	@Autowired
 	private ViolactionService violactionService;
+	@Autowired
+	private EmployeeService employeeService;
 	@Autowired
 	private WorkStationInfosService workStationInfosService;
 	
@@ -66,9 +70,12 @@ public class ViolactionController extends BaseController{
 	//跳转
 	@RequestMapping(value="form")
 	public String form(Violaction violaction,Model model) {
+		//获得所有员工
+		List<Employee> employees=employeeService.findAllList(new Employee());
 		List<WorkStationInfos> stations=workStationInfosService.findAllList(new WorkStationInfos());
 		model.addAttribute("stationList",stations);
 		model.addAttribute("violaction",violaction);
+		model.addAttribute("employeeList", employees);
 		return "modules/qc/violactionForm";
 	}
 	
