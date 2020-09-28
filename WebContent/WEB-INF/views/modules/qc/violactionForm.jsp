@@ -52,7 +52,7 @@
 			<div class="controls">
 				<form:select path="userName" id="eId" class="input-medium required">
 					<form:option value="" label=""/>
-					<form:options items="${employeeList}" itemLabel="employeeName" itemValue="id" htmlEscape="false"/>
+					<form:options items="${employeeList}" itemLabel="employeeName" itemValue="employeeName" htmlEscape="false"/>
 				</form:select>
 				<span class="help-inline"><font color="red">*</font></span>
 			</div>
