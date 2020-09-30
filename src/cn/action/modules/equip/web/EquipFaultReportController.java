@@ -94,5 +94,21 @@ public class EquipFaultReportController extends BaseController{
 		this.addMessage(redirectAttributes, "派工成功！");
 		return "redirect:"+adminPath+"/equip/report";
 	}
-	
+	//按条件分页查询,跳转到设备维修记录页面
+	@RequestMapping(value="repairList")
+	public String repairList(EquipFaultReport equipFaultReport,HttpServletRequest request,HttpServletResponse response,Model model) {
+		//获得所有产线信息
+		List<Line> lines=lineService.findAllList(new Line());
+		model.addAttribute("lineList",lines);
+		//获得分页对象
+		Page<EquipFaultReport> page=equipFaultReportService.findPage(new Page<EquipFaultReport>(request, response), equipFaultReport);
+		model.addAttribute("page",page);
+		return "modules/equip/equipRepairList";
+	}
+		@RequestMapping(value="start")
+	public String startRepair(EquipFaultReport equipFaultReport,Model model,RedirectAttributes redirectAttributes){
+	String message=equipFaultReportService.saveStartRepair(equipFaultReport);
+	this.addMessage(redirectAttributes,message);
+	return "redirect:"+adminPath+"/equip/report/repairList";
+	}
 }

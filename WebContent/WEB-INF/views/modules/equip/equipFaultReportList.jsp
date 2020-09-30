@@ -6,6 +6,9 @@
 <head>
 	<meta name="decorator" content="default">
 	<title>设备报修管理</title>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/layui/css/layui.css">
+	<script src="${pageContext.request.contextPath}/static/layui/layui.js"></script>
+
 	<script type="text/javascript">
 		function page(n,s){
 			$("#pageNo").val(n);
@@ -44,7 +47,7 @@
 	</form:form>
 	<sys:message content="${message}"/>
 	<!-- 3.列表 -->
-	<table id="contentTable" class="table table-striped table-bordered table-condensed">
+	<table id="contentTable" class="layui-table">
 		<thead>
 			<th>设备编号</th>
 			<th>设备类型</th>

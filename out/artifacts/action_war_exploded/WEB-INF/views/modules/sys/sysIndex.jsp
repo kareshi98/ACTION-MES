@@ -6,18 +6,21 @@
 <head>
 	<title>制造执行系统</title>
 	<meta name="decorator" content="blank"/>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/layui/css/layui.css">
+	<script src="${pageContext.request.contextPath}/static/layui/layui.js"></script>
+
 	<c:set var="tabmode" value="${empty cookie.tabmode.value ? '0' : cookie.tabmode.value}"/>
     <c:if test="${tabmode eq '1'}">
     	<link rel="Stylesheet" href="${ctxStatic}/jerichotab/css/jquery.jerichotab.css" />
     	<script type="text/javascript" src="${ctxStatic}/jerichotab/js/jquery.jerichotab.js"></script>
     </c:if>
 	<style type="text/css">
-		#main {padding:0;margin:0;} #main .container-fluid{padding:0 4px 0 6px;}
-		#header {margin:0 0 8px;position:static;} #header li {font-size:14px;_font-size:12px;}
+		#main {padding:0;margin:0;} #main .container-fluid{padding:0 4px 0 6px; }
+		#header {margin:0 0 8px;position:static;} #header li {font-size:14px;_font-size:12px; }
 		#header .brand {font-family:Helvetica, Georgia, Arial, sans-serif, 黑体;font-size:26px;padding-left:33px;}
 		#footer {margin:8px 0 0 0;padding:3px 0 0 0;font-size:11px;text-align:center;border-top:2px solid #0663A2;}
-		#footer, #footer a {color:#999;} #left{overflow-x:hidden;overflow-y:auto;} #left .collapse{position:static;}
-		#userControl>li>a{/*color:#fff;*/text-shadow:none;} #userControl>li>a:hover, #user #userControl>li.open>a{background:transparent;}
+		#footer, #footer a {color:red;} #left{overflow-x:hidden;overflow-y:auto;} #left .collapse{position:static;}
+		#userControl>li>a{color:red;text-shadow:none;} #userControl>li>a:hover, #user #userControl>li.open>a{background:transparent;}
 	</style>
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -119,7 +122,7 @@
 					$(this).click();
 				}
 			});
-			
+
 			function getNotifyNum(){
 				$.get("${ctx}/oa/oaNotify/self/count?updateSession=0&t="+new Date().getTime(),function(data){
 					var num = parseFloat(data);
@@ -148,21 +151,21 @@
 		}// </c:if>
 	</script>
 </head>
-<body>
-	<div id="main">
-		<div id="header" class="navbar navbar-fixed-top">
-			<div class="navbar-inner">
+<body >
+	<div id="main"class="layui-bg-black">
+		<div id="header" class="navbar navbar-fixed-top layui-bg-black">
+			<div class="navbar-inner layui-bg-black">
 				<div class="brand"><img src="${pageContext.request.contextPath}/static/images/mes.png" width=25px height=25px style="vertical-align: top;margin-right:5px;"/><span id="productName">制造执行系统</span></div>
 				<ul id="userControl" class="nav pull-right">
-					
+
 					<li><a href="http://techaction.cn" target="_blank" title="访问网站主页"><i class="icon-home"></i></a></li>
-					
+
 					<li id="themeSwitch" class="dropdown">
-						<!--  
+						<!--
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" title="主题切换"><i class="icon-th-large"></i></a>
 						-->
 						<ul class="dropdown-menu">
-							
+
 						</ul>
 						<!--[if lte IE 6]><script type="text/javascript">$('#themeSwitch').hide();</script><![endif]-->
 					</li>
@@ -179,13 +182,13 @@
 				</ul>
 
 				<div class="nav-collapse">
-					<ul id="menu" class="nav" style="*white-space:nowrap;float:none;">
+					<ul id="menu" class="layui-nav nav" style="*white-space:nowrap;float:none;">
 						<c:set var="firstMenu" value="true"/>
 						<c:forEach items="${menuList}" var="menu" varStatus="idxStatus">
 							<c:if test="${menu.parent.id eq '1'&&menu.isShow eq '1'}">
-								<li class="menu ${not empty firstMenu && firstMenu ? ' active' : ''}">
+								<li class=" layui-nav-item  menu ${not empty firstMenu && firstMenu ? ' active' : ''}">
 									<c:if test="${empty menu.href}">
-										<a class="menu" href="javascript:" data-href="${ctx}/sys/menu/tree.do?parentId=${menu.id}" data-id="${menu.id}"><span>${menu.name}</span></a>
+										<a class="menu layui-bg-black" href="javascript:" data-href="${ctx}/sys/menu/tree.do?parentId=${menu.id}" data-id="${menu.id}"><span>${menu.name}</span></a>
 									</c:if>
 									<c:if test="${not empty menu.href}">
 										<a class="menu" href="" data-id="${menu.id}" target="mainFrame"><span>${menu.name}</span></a>
@@ -203,7 +206,7 @@
 	    </div>
 	    <div class="container-fluid">
 			<div id="content" class="row-fluid">
-				<div id="left"><%-- 
+				<div id="left" class="layui-nav-item layui-nav-itemed"><%--
 					<iframe id="menuFrame" name="menuFrame" src="" style="overflow:visible;" scrolling="yes" frameborder="no" width="100%" height="650"></iframe> --%>
 				</div>
 				<div id="openClose" class="close">&nbsp;</div>
@@ -216,7 +219,7 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript"> 
+	<script type="text/javascript">
 		var leftWidth = 160; // 左侧窗口大小
 		var tabTitleHeight = 33; // 页签的高度
 		var htmlObj = $("html"), mainObj = $("#main");
@@ -228,7 +231,7 @@
 			htmlObj.css({"overflow-x":strs[1] < minWidth ? "auto" : "hidden", "overflow-y":strs[0] < minHeight ? "auto" : "hidden"});
 			mainObj.css("width",strs[1] < minWidth ? minWidth - 10 : "auto");
 			frameObj.height((strs[0] < minHeight ? minHeight : strs[0]) - headerObj.height() - footerObj.height() - (strs[1] < minWidth ? 42 : 28));
-			$("#openClose").height($("#openClose").height() - 5);// <c:if test="${tabmode eq '1'}"> 
+			$("#openClose").height($("#openClose").height() - 5);// <c:if test="${tabmode eq '1'}">
 			$(".jericho_tab iframe").height($("#right").height() - tabTitleHeight); // </c:if>
 			wSizeWidth();
 		}
@@ -239,10 +242,15 @@
 			}else{
 				$("#right").width("100%");
 			}
-		}// <c:if test="${tabmode eq '1'}"> 
+		}// <c:if test="${tabmode eq '1'}">
 		function openCloseClickCallBack(b){
 			$.fn.jerichoTab.resize();
 		} // </c:if>
+layui.use('element', function(){
+  var element = layui.element;
+
+  //…
+});
 	</script>
 	<script src="${ctxStatic}/common/wsize.min.js" type="text/javascript"></script>
 </body>

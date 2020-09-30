@@ -51,6 +51,16 @@ public class MaintenancePlanController extends BaseController{
 		this.addMessage(redirectAttributes, "删除设备保养计划成功！");
 		return "redirect:"+adminPath+"/equip/maintenance";
 	}
+	//批量删除
+		@RequestMapping(value="delmore")
+	public String delmore(String[] idAr,MaintenancePlan maintenancePlan,Model model,RedirectAttributes redirectAttributes) {
+		for(int i=0;i<idAr.length;i++){
+			maintenancePlan.setId(idAr[i]);
+			maintenancePlanService.delete(maintenancePlan);
+		}
+		this.addMessage(redirectAttributes, "删除设备保养计划成功！");
+		return "redirect:"+adminPath+"/equip/maintenance";
+	}
 	//跳转
 	@RequestMapping(value="form")
 	public String form(MaintenancePlan maintenancePlan,Model model) {

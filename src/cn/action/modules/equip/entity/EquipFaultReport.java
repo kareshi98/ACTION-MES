@@ -25,6 +25,20 @@ public class EquipFaultReport extends DataEntity<EquipFaultReport>{
 	
 	private String assignTime;//派工时间
 	private String maintenanceWorker;//维修工人
+	private EquipRepair equipRepair;
+	
+	public EquipRepair getEquipRepair() {
+		return equipRepair;
+	}
+	
+	public void setEquipRepair(EquipRepair equipRepair) {
+		this.equipRepair = equipRepair;
+	}
+	
+	public  EquipFaultReport(){
+		super();
+		this.equipRepair=new EquipRepair();
+	}
 	public String getEquipId() {
 		return equipId;
 	}

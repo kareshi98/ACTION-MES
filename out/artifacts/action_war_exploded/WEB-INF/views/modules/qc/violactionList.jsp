@@ -52,11 +52,11 @@
 			<label>工站名称：</label>
 			<form:input path="workStationInfos.stationName" maxlength="50" class="input-medium" htmlEscape="false"/>
 			<input id="btnSubmit" type="submit" value="查询" class="btn btn-primary"/>
+			<input id="PutExcel" type="submit" value="导出EXCEL" class="btn btn-primary" onclick="tableToExcel('contentTable','violationList')"/>
 		</div>
 	</form:form>
 	<sys:message content="${message}"/>
 	<!-- 3.列表 -->
-	<button type="button" onclick="tableToExcel('contentTable','violationList')">导出EXCEL</button>
 	<table id="contentTable" class="table table-striped table-bordered table-condensed">
 		<thead>
 			<th>工序编码</th>

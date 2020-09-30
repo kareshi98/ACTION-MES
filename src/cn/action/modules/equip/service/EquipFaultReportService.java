@@ -48,4 +48,25 @@ public class EquipFaultReportService extends CrudService<EquipFaultReportDao, Eq
 		}
 		return true;
 	}
+		/**
+	 * 开工
+	 */
+	public String saveStartRepair(EquipFaultReport equipFaultReport)
+	{
+		String message=null;
+		EquipFaultReport report =this.get(equipFaultReport);
+		if(report.getStatus().equals("0001"))
+		{
+			message="设备已经报修，正在等待派工";
+		}else if(report.getStatus().equals("0003")){
+			message="设备开始维修，不能重复开工";
+		}else if(report.getStatus().equals("0004")){
+			message="设备维修已经完工";
+		}else{
+			report.setStatus("0003");
+			this.save(report);
+			message="故障开始维修";
+		}
+		return message;
+	}
 }

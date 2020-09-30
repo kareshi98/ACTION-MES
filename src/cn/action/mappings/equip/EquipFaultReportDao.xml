@@ -3,55 +3,62 @@
 <mapper namespace="cn.action.modules.equip.dao.EquipFaultReportDao">
 	
 	<sql id="Columns">
-		id,
-		equip_id as "equipId",
-		equip_no as "equipNo",
-		equip_type as "equipType",
-		equip_loc as "equipLoc",
-		fault_desc as "faultDesc",
-		status,
-		report_person as "reportPerson",
-		assign_time as "assignTime",
-		maintenance_worker as "maintenanceWorker",
-		del_flag as "delFlag",
-		remarks,
-		create_by as "createBy.id",
-		create_date as "createDate",
-		update_by as "updateBy.id",
-		update_date as "updateDate"	
+		a.id,
+		a.equip_id as "equipId",
+		a.equip_no as "equipNo",
+		a.equip_type as "equipType",
+		a.equip_loc as "equipLoc",
+		a.fault_desc as "faultDesc",
+		a.status,
+		a.report_person as "reportPerson",
+		a.assign_time as "assignTime",
+		a.maintenance_worker as "maintenanceWorker",
+		b.id as "equipRepair.id",
+		a.del_flag as "delFlag",
+		a.remarks,
+		a.create_by as "createBy.id",
+		a.create_date as "createDate",
+		a.update_by as "updateBy.id",
+		a.update_date as "updateDate"
 	</sql>
 	<!-- 根据id查询：get -->
 	<select id="get" resultType="EquipFaultReport">
 		select
 			<include refid="Columns"></include>
-		from equip_fault_report
-		where id=#{id}
+		from equip_fault_report a
+		  <include refid="Joins"/>
+		where a.id=#{id}
 	</select>
+
+	<sql id="Joins">
+   left join equip_repair b on b.mid=a.id
+	</sql>
 	<!-- 根据条件查询 -->
 	<select id="findList" resultType="EquipFaultReport">
 		select
 			<include refid="Columns"></include>
-		from equip_fault_report
-		where del_flag=#{DEL_FLAG_NORMAL}
+		from equip_fault_report a
+		  <include refid="Joins"/>
+		where a.del_flag=#{DEL_FLAG_NORMAL}
 		<if test="equipType!=null and equipType!=''">
-			and equip_type=#{equipType}
+			and a.equip_type=#{equipType}
 		</if>
 		<if test="equipLoc!=null and equipLoc!=''">
-			and equip_loc=#{equipLoc}
+			and a.equip_loc=#{equipLoc}
 		</if>
 		<if test="status!=null and status!=''">
-			and status=#{status}
+			and a.status=#{status}
 		</if>
-		order by update_date desc
+		order by a.update_date desc
 	</select>
 	<!-- 查询所有 -->
 	<select id="findAllList" resultType="EquipFaultReport">
 		select
 			<include refid="Columns"></include>
-		from equip_fault_report
-		where del_flag=#{DEL_FLAG_NORMAL}
-		
-		order by update_date desc
+		from equip_fault_report a
+		  <include refid="Joins"/>
+		where a.del_flag=#{DEL_FLAG_NORMAL}
+		order by a.update_date desc
 	</select>
 	<!-- 插入 -->
 	<insert id="insert">

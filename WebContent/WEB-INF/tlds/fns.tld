@@ -226,7 +226,14 @@
     <function-signature>long pastDays(java.util.Date)</function-signature>
     <example>${fns:pastDays(date)}</example>  
   </function>
-	
+  <function>
+    <description>获取格式化后的日期字符串</description>
+    <name>formatDateTime</name>
+    <function-class>cn.action.common.utils.DateUtils</function-class>
+    <function-signature>java.lang.String formatDateTime(java.util.Date)</function-signature>
+    <example>${fns:formatDateTime(date)}</example>
+  </function>
+
   <!-- JsonMapper -->
   <function>
     <description>对象转换JSON字符串</description>
