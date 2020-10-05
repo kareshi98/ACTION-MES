@@ -13,6 +13,30 @@
 			$("#searchForm").submit();
 		}
 	</script>
+	<script type="text/javascript">
+		function base64 (content) {
+			return window.btoa(unescape(encodeURIComponent(content)));
+		}
+		/*
+        *@tableId: table的Id
+        *@fileName: 要生成excel文件的名字（不包括后缀，可随意填写）
+        */
+		function tableToExcel(tableID,fileName){
+			var table = document.getElementById(tableID);
+			var excelContent = table.innerHTML;
+			var excelFile = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:x='urn:schemas-microsoft-com:office:excel' xmlns='http://www.w3.org/TR/html40/'>";
+			excelFile += "<head><meta charset='UTF-8'><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head>";
+			excelFile += "<body><table>";
+			excelFile += excelContent;
+			excelFile += "</table></body>";
+			excelFile += "</html>";
+			var link = "data:application/vnd.ms-excel;base64," + base64(excelFile);
+			var a = document.createElement("a");
+			a.download = fileName+".xls";
+			a.href = link;
+			a.click();
+		}
+	</script>
 </head>
 <body>
 	<!-- 1.tab头部 -->
@@ -33,6 +57,7 @@
 			<label>人员名称：</label>
 			<form:input path="employeeName" maxlength="50" class="input-medium" htmlEscape="false"/>
 			<input id="btnSubmit" type="submit" value="查询" class="btn btn-primary"/>
+			<input id="PutExcel" type="submit" value="导出EXCEL" class="btn btn-primary" onclick="tableToExcel('contentTable','挑刺工站绩效')"/>
 		</div>
 	</form:form>
 	<!-- 3.列表 -->

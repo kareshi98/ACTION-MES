@@ -24,263 +24,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20df1f5d-c351-4127-810d-21fd545373f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/equip/EquipFaultReportDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/equip/EquipRepairDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/equip/EquipmentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/equip/MaintenancePlanDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/kpi/ChopingBizDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/kpi/CutPieceDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/kpi/DecaptitatingDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/kpi/PerformStationDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/kpi/PerformTypeDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/mappings/kpi/RemoveFishBoneDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/dao/EquipFaultReportDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/dao/EquipRepairDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/dao/EquipmentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/dao/MaintenancePlanDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/entity/EquipFaultReport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/entity/EquipRepair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/entity/Equipment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/entity/MaintenancePlan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/service/EquipFaultReportService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/service/EquipRepairService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/service/EquipmentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/service/MaintenancePlanService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/web/EquipFaultReportController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/web/EquipRepairController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/web/EquipmentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/equip/web/MaintenancePlanController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/dao/ChopingBizDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/dao/CutPieceDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/dao/DecaptitatingDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/dao/PerformStationDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/dao/PerformTypeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/dao/RemoveFishBoneDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/entity/ChopingBiz.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/entity/CutPiece.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/entity/Decaptitating.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/entity/PerformStation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/entity/PerformType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/entity/RemoveFishBone.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/service/ChopingBizService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/service/CutPieceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/service/DecaptitatingService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/service/PerformStationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/service/PerformTypeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/service/RemoveFishBoneService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/ChopingBizController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/CutPieceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/DecaptitatingController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/PerformStationController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/PerformTypeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/RemoveFishBoneController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/sys/utils/RandomValidateCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/equip/EquipFaultReportDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/equip/EquipRepairDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/equip/EquipmentDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/equip/MaintenancePlanDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/kpi/ChopingBizDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/kpi/CutPieceDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/kpi/DecaptitatingDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/kpi/PerformStationDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/kpi/PerformTypeDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/mappings/kpi/RemoveFishBoneDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/dao/EquipFaultReportDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/dao/EquipRepairDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/dao/EquipmentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/dao/MaintenancePlanDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/entity/EquipFaultReport.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/entity/EquipRepair.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/entity/Equipment.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/entity/MaintenancePlan.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/service/EquipFaultReportService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/service/EquipRepairService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/service/EquipmentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/service/MaintenancePlanService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/web/EquipFaultReportController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/web/EquipRepairController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/web/EquipmentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/equip/web/MaintenancePlanController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/dao/ChopingBizDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/dao/CutPieceDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/dao/DecaptitatingDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/dao/PerformStationDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/dao/PerformTypeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/dao/RemoveFishBoneDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/entity/ChopingBiz.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/entity/CutPiece.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/entity/Decaptitating.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/entity/PerformStation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/entity/PerformType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/entity/RemoveFishBone.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/service/ChopingBizService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/service/CutPieceService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/service/DecaptitatingService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/service/PerformStationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/service/PerformTypeService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/service/RemoveFishBoneService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/ChopingBizController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/CutPieceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/DecaptitatingController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/PerformStationController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/PerformTypeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/RemoveFishBoneController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/sys/utils/RandomValidateCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/equipFaultReportForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/equipFaultReportList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/equipList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/equipMaintenanceWorkerForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/equipRepairList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/maintenancePlanForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/maintenancePlanList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/maintenanceReportForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/chopingBizList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/cutPieceList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/decaptitatingList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/performStationForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/performStationList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/performTypeForm.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/performTypeList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/removeFishBoneList.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/images/2d803517-5f77-4752-a3b5-b2b4f08118a1pineapple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/images/32ea4472-a845-481e-a445-c63da05a39b6pear.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/images/5cc136f5-784a-4122-91cc-859abd3e9537pineapple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/images/7260c5a6-ed2f-4a4d-befb-b6ed7855d15eapple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/images/apple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/images/d49a72bf-78fc-4459-91e4-5d96d273fd98pineapple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/static/layui/layui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Administrator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/action.iml" beforeDir="false" afterPath="$PROJECT_DIR$/action.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/action.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/action.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/cn/action/common/persistence/interceptor/SQLHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/cn/action/common/persistence/interceptor/SQLHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/cn/action/common/utils/PropertiesLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/cn/action/common/utils/PropertiesLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/action.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/action.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/common/persistence/interceptor/SQLHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/common/persistence/interceptor/SQLHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/common/utils/PropertiesLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/common/utils/PropertiesLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/lib/guava-28.0-jre.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.21.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/action.properties" afterDir="false" />
+    <list default="true" id="20df1f5d-c351-4127-810d-21fd545373f7" name="Default Changelist" comment="大概可以了">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/equip/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/chopingBizList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/chopingBizList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/cutPieceList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/cutPieceList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/decaptitatingList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/decaptitatingList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/removeFishBoneList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/views/modules/kpi/removeFishBoneList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/ChopingBizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/ChopingBizController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/PerformStationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/cn/action/modules/kpi/web/PerformStationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/ChopingBizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/ChopingBizController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/PerformStationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/classes/cn/action/modules/kpi/web/PerformStationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/equip/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/chopingBizList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/chopingBizList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/cutPieceList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/cutPieceList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/decaptitatingList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/decaptitatingList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/performStationList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/performStationList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/removeFishBoneList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/action_war_exploded/WEB-INF/views/modules/kpi/removeFishBoneList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/action/modules/kpi/web/ChopingBizController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/action/modules/kpi/web/ChopingBizController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +78,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -326,17 +87,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
@@ -473,18 +223,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
       <item itemvalue="TomEE Server.Unnamed" />
@@ -498,8 +236,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601861071266</updated>
-      <workItem from="1601861073856" duration="1167000" />
+      <workItem from="1601861073856" duration="4897000" />
+      <workItem from="1601867076570" duration="512000" />
     </task>
+    <task id="LOCAL-00001" summary="大概可以了">
+      <created>1601862418204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601862418204</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,6 +262,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="大概可以了" />
+    <option name="LAST_COMMIT_MESSAGE" value="大概可以了" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" width="1089" height="752" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601861405897">
@@ -533,57 +285,69 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="445" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1601861168409" />
-    <state width="1024" height="223" key="GridCell.Tab.0.bottom" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.0.bottom" timestamp="1601867450625">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.0.center" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601867450625" />
+    <state width="1111" height="223" key="GridCell.Tab.0.center" timestamp="1601867450625">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.0.left" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1601867450625" />
+    <state width="1111" height="223" key="GridCell.Tab.0.left" timestamp="1601867450624">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.0.right" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1601867450624" />
+    <state width="1111" height="223" key="GridCell.Tab.0.right" timestamp="1601867450625">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.1.bottom" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1601867450625" />
+    <state width="1111" height="223" key="GridCell.Tab.1.bottom" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.1.center" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.1.center" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.1.left" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.1.left" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.1.right" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.1.right" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.2.bottom" timestamp="1601861898947">
+    <state width="1111" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.2.bottom" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601861898947" />
-    <state width="1024" height="223" key="GridCell.Tab.2.center" timestamp="1601861898947">
+    <state width="1111" height="223" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.2.center" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1601861898947" />
-    <state width="1024" height="223" key="GridCell.Tab.2.left" timestamp="1601861898946">
+    <state width="1111" height="223" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.2.left" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1601861898946" />
-    <state width="1024" height="223" key="GridCell.Tab.2.right" timestamp="1601861898947">
+    <state width="1111" height="223" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state width="1111" height="223" key="GridCell.Tab.2.right" timestamp="1601867450435">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1024" height="223" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1601861898947" />
-    <state x="249" y="7" key="SettingsEditor" timestamp="1601861640186">
+    <state width="1111" height="223" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1601867450435" />
+    <state x="147" y="69" key="MergeDialog" timestamp="1601862506991">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1601861640186" />
+    <state x="147" y="69" key="MergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1601862506991" />
+    <state x="396" y="193" key="MultipleFileMergeDialog" timestamp="1601862518490">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="396" y="193" key="MultipleFileMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1601862518490" />
+    <state x="249" y="7" key="SettingsEditor" timestamp="1601862627964">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1601862627964" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1601862643951">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1601862643951" />
   </component>
 </project>
