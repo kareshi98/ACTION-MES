@@ -27,7 +27,7 @@
 		<input id="pageNo" name="pageNo" type="hidden" value=${page.pageNo}/>
 		<input id="pageSize" name="pageSize" type="hidden" value=${page.pageSize}/>
 		<div class="controls">
-			<label>设备类型：</label>
+			<label class="layui-form-label">设备类型：</label>
 			<form:select path="type" id="type" class="input-medium required">
 				<form:option value="" label=""/>
 				<form:options items="${fns:getDictList('equip_type')}" itemLabel="label" itemValue="value" htmlEscape="false"/>

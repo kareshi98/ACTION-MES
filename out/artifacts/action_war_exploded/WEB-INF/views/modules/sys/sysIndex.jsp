@@ -191,7 +191,7 @@
 										<a class="menu layui-bg-black" href="javascript:" data-href="${ctx}/sys/menu/tree.do?parentId=${menu.id}" data-id="${menu.id}"><span>${menu.name}</span></a>
 									</c:if>
 									<c:if test="${not empty menu.href}">
-										<a class="menu" href="" data-id="${menu.id}" target="mainFrame"><span>${menu.name}</span></a>
+										<a class="menu layui-bg-black" href="" data-id="${menu.id}" target="mainFrame"><span>${menu.name}</span></a>
 									</c:if>
 								</li>
 								<c:if test="${firstMenu}">
@@ -206,8 +206,8 @@
 	    </div>
 	    <div class="container-fluid">
 			<div id="content" class="row-fluid">
-				<div id="left" class="layui-nav-item layui-nav-itemed"><%--
-					<iframe id="menuFrame" name="menuFrame" src="" style="overflow:visible;" scrolling="yes" frameborder="no" width="100%" height="650"></iframe> --%>
+				<div id="left" class="layui-nav-item layui-nav-itemed">
+					<iframe id="menuFrame" name="menuFrame" src="" style="overflow:visible;" scrolling="yes" frameborder="no" width="100%" height="0"></iframe>
 				</div>
 				<div id="openClose" class="close">&nbsp;</div>
 				<div id="right">
