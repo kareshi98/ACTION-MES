@@ -62,6 +62,15 @@ public class PerformStationController extends BaseController{
 		this.addMessage(redirectAttributes, "删除绩效参数与工站关系成功！");
 		return "redirect:"+adminPath+"/kpi/performStation";
 	}
+	@RequestMapping(value="delmore")
+	public String delmore(String[] idAr, PerformStation performStation, Model model, RedirectAttributes redirectAttributes) {
+		for(int i=0;i<idAr.length;i++){
+			performStation.setId(idAr[i]);
+			performStationService.delete(performStation);
+		}
+		this.addMessage(redirectAttributes, "删除工艺流程成功！");
+		return "redirect:"+adminPath+"/kpi/performStation";
+	}
 	//跳转
 	@RequestMapping(value="form")
 	public String form(PerformStation performStation,Model model) {
