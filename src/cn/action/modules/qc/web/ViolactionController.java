@@ -67,6 +67,15 @@ public class ViolactionController extends BaseController{
 		this.addMessage(redirectAttributes, "删除违规记录成功！");
 		return "redirect:"+adminPath+"/qc/violaction";
 	}
+
+	// 次数查询
+	@RequestMapping(value = "time")
+	public String times(Violaction violaction, Model model) {
+		List<Violaction> list = violactionService.findTimes(violaction);
+		model.addAttribute("list", list);
+		return "modules/qc/violactionTime";
+	}
+
 	//跳转
 	@RequestMapping(value="form")
 	public String form(Violaction violaction,Model model) {

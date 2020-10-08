@@ -101,4 +101,14 @@
 			del_flag=#{DEL_FLAG_DELETE}
 		where id=#{id}
 	</update>
+	<!-- 7.查询违规次数 -->
+	<select id="findTimes" resultType="Violaction">
+		SELECT userName,count(userName) as count
+		FROM qc_violaction
+		where del_flag=#{DEL_FLAG_NORMAL}
+			<if test="violationTime!=null and violationTime!=''">
+				and violation_time like concat('%',#{violationTime},'%')
+			 </if>
+		GROUP BY userName ORDER BY count(userName) desc
+	</select>
 </mapper>

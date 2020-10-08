@@ -43,6 +43,7 @@
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="${ctx}/qc/violaction">违规记录列表</a></li>
 		<li><a href="${ctx}/qc/violaction/form">违规记录添加</a></li>
+		<li><a href="${ctx}/qc/violaction/time">违规次数列表</a></li>
 	</ul>
 	<!-- 2.查询 -->
 	<form:form id="searchForm" method="post" action="${ctx}/qc/violaction" modelAttribute="violaction" class="breadcrumb form-search">
