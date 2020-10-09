@@ -131,6 +131,10 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	<form action="${ctx}/tec/process/batchadd" method="post" enctype="multipart/form-data">
+		<input type="file" id="upfile" name="upfile" accept=".xls,.xlsx">
+		<input type="submit" value="上传文件">
+	</form>
 	<!-- 4.分页 -->
 	<div class="pagination">${page}</div>
 </body>

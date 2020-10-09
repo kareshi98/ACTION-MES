@@ -31,6 +31,7 @@
 	<ul class="nav nav-tabs">
 		<li><a href="${ctx}/qc/violaction">违规记录列表</a></li>
 		<li class="active"><a href="">违规记录${not empty violaction.id?'修改':'添加' }</a></li>
+		<li><a href="${ctx}/qc/violaction/time">违规次数列表</a></li>
 	</ul>
 	<!-- 2.表单 -->
 	<form:form id="inputForm" method="post" action="${ctx}/qc/violaction/save" modelAttribute="violaction" class="form-horizontal">

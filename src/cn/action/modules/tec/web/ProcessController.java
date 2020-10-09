@@ -4,12 +4,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cn.action.modules.tec.entity.Flow;
+import cn.action.modules.tec.utils.excel.ExcelUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import cn.action.common.persistence.Page;
@@ -17,6 +21,10 @@ import cn.action.common.utils.StringUtils;
 import cn.action.common.web.BaseController;
 import cn.action.modules.tec.entity.Process;
 import cn.action.modules.tec.service.ProcessService;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
 
 @Controller
 @RequestMapping(value="${adminPath}/tec/process")
@@ -69,4 +77,40 @@ public class ProcessController extends BaseController{
 		model.addAttribute("process", process);
 		return "modules/tec/processForm";
 	}
+
+    @RequestMapping(value="/batchadd")
+    @ResponseBody
+    public String ajaxUploadExcel(@RequestParam("upfile") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
+        file = multipartRequest.getFile("upfile");
+        System.out.println("file is "+file.getName());
+        InputStream in =null;
+        try {
+            in = file.getInputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        List<List<String>> listob = null;
+        try {
+
+            listob= new ExcelUtils().readExcel(in,0).getContentList();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < listob.size(); i++) {
+            List<String> lo = listob.get(i);
+            Process process = new Process();
+            process.setProCode(String.valueOf(lo.get(1)));
+            process.setProName(String.valueOf(lo.get(2)));
+            process.setProDesc(String.valueOf(lo.get(3)));
+            processService.save(process);
+        }
+        //该处可调用service相应方法进行数据保存到数据库中，现只对数据输出
+		return "redirect:"+adminPath+"/tec/process";
+
+
+    }
 }
