@@ -79,7 +79,6 @@ public class ProcessController extends BaseController{
 	}
 
     @RequestMapping(value="/batchadd")
-    @ResponseBody
     public String ajaxUploadExcel(@RequestParam("upfile") MultipartFile file, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
